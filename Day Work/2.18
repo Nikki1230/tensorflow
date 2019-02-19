@@ -16,4 +16,4 @@
                          self参数：由哪一个对象调用的方法，方法内的self就是哪一个对象的引用
       
       
-      找出学习Tensorflow资料
+      找出学习Tensorflow资料--tensorflow白皮书（简单介绍tensorflow）
