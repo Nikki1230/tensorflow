@@ -1,0 +1,36 @@
+第七天
+     python视频-网络通信-基本概念
+                端口 目的是IP地址 某一个应用程序的选择依赖端口
+                动态端口-一般不固定分配某种服务，程序向主机申请一个端口，主机从可用的端口号中分配一个供它使用
+                Socket -- 实现不同主机之间的进程间通信
+                          创建socket-返回值是一个对象
+                          使用socket-收/发数据
+                          关闭.close()
+     
+     DLinterview-基础算法
+                 链表
+                 这种东西吧 -- 慢慢整吧
+                 
+     深度学习基础相关--长短时记忆网络(LSTM)--反向传播公式推导
+                      在语音识别、图片描述、自然语言处理等许多领域中成功应用
+                      新增单元状态C 保存RNN的长期状态  LSTM有三个输入 两个输出
+                      遗忘门（forget gate），它决定了上一时刻的单元状态有多少保留到当前时刻
+                      输入门（input gate），它决定了当前时刻网络的输入有多少保存到单元状态
+                      输出门（output gate）来控制单元状态有多少输出到LSTM的当前输出值
+                 GRU 将输入门、遗忘门、输出门变为两个门：更新门（Update Gate）和重置门（Reset Gate）
+                     将单元状态与输出合并为一个状态
+     
+     深度学习课本
+     
+     tensorflow代码--Logistic Regression
+                    def logistic_regression(inputs):
+                                return tf.matmul(inputs, W) + b
+
+    TensorFlow.js是一个开源的基于硬件加速的JavaScript库，用于训练和部署机器学习模型。
+    在JavaScript项目中，
+    TensorFlow.js的安装方法有两种：一种是通过script标签引入，另外一种就是通过npm进行安装。
+    
+    js也是重要的语言！！！
+    
+    
+    分布式编程？？？？？
