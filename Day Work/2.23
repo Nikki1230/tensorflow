@@ -20,7 +20,8 @@
                  GRU 将输入门、遗忘门、输出门变为两个门：更新门（Update Gate）和重置门（Reset Gate）
                      将单元状态与输出合并为一个状态
      
-     深度学习课本
+     深度学习课本--机器学习基础
+                  模型的容量是指其拟合各种函数的能力
      
      tensorflow代码--Logistic Regression
                     def logistic_regression(inputs):
