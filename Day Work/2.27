@@ -28,7 +28,9 @@
                    GBDT会产生特征组合
                    from tensorflow.contrib.boosted_trees.estimator_batch.estimator import GradientBoostedDecisionTreeClassifier
                    
-                   
+       分类问题--离散变量预测--0 or 1  预测明天是阴，晴，还是下雨
+     
+       回归问题--连续变量预测-- 预测明天的温度是多少度
                    
                    
        CART tree生成算法：
