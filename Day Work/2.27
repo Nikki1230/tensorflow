@@ -1,0 +1,73 @@
+第十一天
+       python视频--tcp服务器编程
+                   socket创建套接字
+                   bind绑定ip和port
+                   listen使套接字变为可以被动连接
+                   accept等待客户端连接
+                   recv/send 接受发送数据
+                  循环为多个客户端工作
+       
+       机器学习算法--github上的理论
+                   信息论的基本想法是：一件不太可能的事发生，要比一件非常可能的事发生，提供更多的信息。
+                   信息熵--用于对整个概率分布中的不确定性总量进行量化
+                   逻辑斯蒂回归推导--梯度下降法
+                   SVM--基本模型是定义在特征空间上的间隔最大的线性分类器
+                   核技巧--非线性分类器
+                   支持向量--在寻找找这条直线的时候，一般只需看两类数据，它们各自最靠近划分直线的那些点，
+                   核函数表示将输入从输入空间映射到特征空间后得到的特征向量之间的内积
+                   
+                   决策树--决策树的训练通常由三部分组成：特征选择、树的生成、剪枝。
+       
+       深度学习基础--神经网络和反向传播算法
+                    认为设置的参数称为超参数
+                    反向传播--  输出层    隐藏层
+       
+       tensorflow--Gradient Boosted Decision Tree（梯度下降树）
+                   gbdt 是通过采用加法模型（即基函数的线性组合），以及不断减小训练过程产生的残差来达到将数据分类或者回归
+                   是根据CART tree(二叉树)回归树生成过程来选择特征。
+                   GBDT会产生特征组合
+                   from tensorflow.contrib.boosted_trees.estimator_batch.estimator import GradientBoostedDecisionTreeClassifier
+                   
+                   
+                   
+                   
+       CART tree生成算法：
+        def findLossAndSplit(x,y):
+      # 我们用 x 来表示训练数据
+      # 我们用 y 来表示训练数据的label
+      # x[i]表示训练数据的第i个特征
+      # x_i 表示第i个训练样本
+  
+      # minLoss 表示最小的损失
+      minLoss = Integet.max_value
+     # feature 表示是训练的数据第几纬度的特征
+     feature = 0
+     # split 表示切分点的个数
+     split = 0
+ 
+     # M 表示 样本x的特征个数
+     for j in range(0,M):
+         # 该维特征下，特征值的每个切分点，这里具体的切分方式可以自己定义
+         for c in range(0,x[j]):
+             L = 0
+             # 第一类
+            R1 = {x|x[j] <= c}
+            # 第二类
+             R2 = {x|x[j] > c}
+             # 属于第一类样本的y值的平均值
+             y1 = ave{y|x 属于 R1}
+             # 属于第二类样本的y值的平均值
+             y2 = ave{y| x 属于 R2}
+            # 遍历所有的样本，找到 loss funtion 的值
+             for x_1 in all x
+                 if x_1 属于 R1： 
+                    L += (y_1 - y1)^2 
+                else:
+                    L += (y_1 - y2)^2
+             if L < minLoss:
+                minLoss = L
+                feature  = i
+               split = c
+     return minLoss,feature ,split
+       
+       
